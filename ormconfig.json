@@ -1,0 +1,18 @@
+{
+  "type": "postgres",
+  "host": "172.29.64.1",
+  "port": 5432,
+  "username": "main",
+  "password": "bacate",
+  "database": "gostack_gobarber",
+  "synchronize": true,
+  "entities": [
+    "./src/models/*.ts"
+  ],
+  "migrations": [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
+}
